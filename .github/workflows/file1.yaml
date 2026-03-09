@@ -1,0 +1,20 @@
+name: file configuration workflow
+
+on: push
+
+jobs:
+  creating-files:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: creating devops.txt file
+        run: echo "kk devops 123, TC palya" > devops.txt
+
+      - name: display content of current location
+        run: ls -lrth
+
+      - name: Display current working directory
+        run: pwd
+
+      - name: display devops.txt file
+        run: cat devops.txt
