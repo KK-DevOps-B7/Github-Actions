@@ -1,0 +1,15 @@
+name: Testing the workflows
+
+on: push
+
+jobs:
+  test-cicd-job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print Hello
+        run: echo "Hello-kkfunda"
+
+      - name: Print current date
+        run: date
+    
